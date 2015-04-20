@@ -6,4 +6,7 @@
     <string name="swipe">swipe Left or Right to see the next Recipe</string>
     <string name="title_activity_splash">Splash</string>
     <string name="title_activity_login_">Login_Activity</string>
+    <string name="title_activity_how_it_works2">HowItWorks2</string>
+    <string name="helps">Mpishi helps you contribute and share recipes with other Mpishi users</string>
+    <string name="title_activity_main">Main</string>
 </resources>

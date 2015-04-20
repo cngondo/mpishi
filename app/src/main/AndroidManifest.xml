@@ -31,6 +31,14 @@
             android:name=".Login_Activity"
             android:label="@string/title_activity_login_" >
         </activity>
+        <activity
+            android:name=".HowItWorks2"
+            android:label="@string/title_activity_how_it_works2" >
+        </activity>
+        <activity
+            android:name=".Main"
+            android:label="@string/title_activity_main" >
+        </activity>
     </application>
 
 </manifest>
