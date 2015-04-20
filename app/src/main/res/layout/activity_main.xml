@@ -59,9 +59,10 @@
                 android:layout_height="wrap_content"
                 android:text="Latest Recipes"
                 android:id="@+id/button3"
-                android:background="#0788F1" 
+                android:background="#0788F1"
                 android:paddingTop="10dp"
                 android:textColor="#ffffff"/>
+
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

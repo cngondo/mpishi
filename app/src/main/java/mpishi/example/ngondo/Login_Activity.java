@@ -3,6 +3,7 @@ package mpishi.example.ngondo;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
+import android.view.WindowManager;
 
 
 public class Login_Activity extends Activity {
@@ -10,10 +11,13 @@ public class Login_Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        getActionBar().hide();
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
 
+        //getActionBar().hide();
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        setContentView(R.layout.activity_login);
 
     }
 

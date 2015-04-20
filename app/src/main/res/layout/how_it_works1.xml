@@ -41,7 +41,7 @@
             <ImageButton
                 android:layout_width="fill_parent"
                 android:layout_height="30dp"
-                android:id="@+id/imageButton"
+                android:id="@+id/next"
                 android:background="@drawable/btnbelow"
                 />
         </LinearLayout>
@@ -55,10 +55,6 @@
         android:text="NEXT"
         android:id="@+id/textView2"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="310dp"
-        android:layout_marginStart="310dp"
         android:textColor="#ffffff" />
 
 </RelativeLayout>
