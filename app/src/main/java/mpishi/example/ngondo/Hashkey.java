@@ -17,17 +17,18 @@ public class Hashkey extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        printHashKey();
     }
 //    Generates the hash key for us
     public void printHashKey(){
         try {
             PackageInfo info = getPackageManager().getPackageInfo(
-                    "com.facebook.samples.hellofacebook",
+                    "mpishi.example.ngondo",
                     PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());
-                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+                Log.d("NGONDO", Base64.encodeToString(md.digest(), Base64.DEFAULT));
             }
         } catch (PackageManager.NameNotFoundException e) {
 

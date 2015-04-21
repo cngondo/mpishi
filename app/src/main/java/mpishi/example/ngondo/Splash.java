@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
+import mpishi.example.ngondo.Hashkey;
 
 
 public class Splash extends Activity {
@@ -21,7 +22,7 @@ public class Splash extends Activity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_splash);
-        //getActionBar().hide();
+
 
 //Handler that displays it and fires a new intent to main
         new Handler().postDelayed(new Runnable() {
@@ -36,10 +37,7 @@ public class Splash extends Activity {
             }
         },splashInterval);
 
-
-
+//        Hashkey hash = new Hashkey();
+//        hash.printHashKey();
     }
-
-
-
 }
