@@ -8,48 +8,11 @@
     android:background="@drawable/bg_main"
     android:gravity="center_horizontal">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <FrameLayout
+        android:id="@+id/com_facebook_fragment_container"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="center_horizontal">
+        android:layout_height="fill_parent">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/imageView2"
-            android:src="@drawable/logo"/>
+        </FrameLayout>
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center_vertical|center_horizontal">
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:id="@+id/fblogin"
-                android:src="@drawable/fb_login"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Forgot Password?"
-                android:id="@+id/textView"
-                android:gravity="center_vertical|center_horizontal"
-                android:layout_below="@+id/fblogin"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="58dp"
-                android:textColor="#ffffff"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center_vertical|center_horizontal">
-
-        </RelativeLayout>
-    </LinearLayout>
 </RelativeLayout>
