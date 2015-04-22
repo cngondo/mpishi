@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import com.facebook.FacebookSdk;
+
+
 import com.facebook.login.widget.LoginButton;
 
 
@@ -28,7 +30,7 @@ public class Login_Activity extends Activity {
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         FbLogin frag_login = new FbLogin();
-        ft.add(R.id.com_facebook_fragment_container, frag_login, "Hello");
+        ft.replace(R.id.fragment_container, frag_login);
         ft.commit();
 
 
