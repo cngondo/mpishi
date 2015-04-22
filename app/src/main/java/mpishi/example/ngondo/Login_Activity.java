@@ -1,21 +1,14 @@
 package mpishi.example.ngondo;
 
-import android.app.Activity;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+
+import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.Window;
+import android.support.v4.app.FragmentTransaction;
 import android.view.WindowManager;
 import com.facebook.FacebookSdk;
 
-
-import com.facebook.login.widget.LoginButton;
-
-
-
-public class Login_Activity extends Activity {
-
-
+public  class Login_Activity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,15 +19,12 @@ public class Login_Activity extends Activity {
 //        Initialize fb sdk
         FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_login);
-
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        FbLogin frag_login = new FbLogin();
-        ft.replace(R.id.fragment_container, frag_login);
+//call the fragment
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+// Replace the contents of the container with the new fragment
+        ft.replace(R.id.fragment_container, new FbLogin());
+// Complete the changes added above
         ft.commit();
-
-
-
     }
 
 
